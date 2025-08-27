@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <title>QRosity</title>
+</head>
+<body>
+    <div class="nav">
+        <img src="{{ url_for('static', filename='favicon.png') }}" alt="icon" height="20px" width="20px">
+        
+        <h1>QRosity</h1>
+        <h3>Your QR Our Service</h3>
+    </div>
+    <div> 
+        <form method="POST">
+            <input type="text" name="qrdata" placeholder="Enter text or URL" required>
+            <button type="submit">Generate QR</button>
+        </form>
+    </div>
+   
+    
+</body>
+</html>
